@@ -1,25 +1,28 @@
 # Number Guessing Game
 
-A CLI-based number guessing game built with TypeScript and Node.js. The game runs in your terminal.
+A CLI-based number guessing game built with TypeScript and Node.js.
+
+This project was created as a solution for the [Number Guessing Game](https://roadmap.sh/projects/number-guessing-game) project on [roadmap.sh](https://roadmap.sh).
 
 ## How to Play
 
-1. The computer randomly selects a number between **1 and 100**.
-2. Select a difficulty level:
+The computer randomly selects a number between **1 and 100**. Your goal is to guess the number before you run out of chances.
+
+1. Select a difficulty level:
    - **Easy** — 10 chances
    - **Medium** — 5 chances
    - **Hard** — 3 chances
-3. Enter your guess in the terminal.
-4. The game tells you whether the correct number is greater or less than your guess.
-5. Win by guessing the number before you run out of chances.
-6. After each round, choose whether to play again or quit.
+2. Enter your guess in the terminal.
+3. The game tells you whether the correct number is greater or less than your guess.
+4. Guess correctly to win, or run out of chances to lose.
+5. Choose to play again or quit after each round.
 
 ### Extra Commands
 
 - `hint` — Get a clue about the correct number's range (once per round).
 - `quit` — Exit the game at any time.
 
-### Features
+## Features
 
 - Welcome message and rules
 - Random number generation between 1 and 100
@@ -28,7 +31,7 @@ A CLI-based number guessing game built with TypeScript and Node.js. The game run
 - Multiple rounds with play-again prompt
 - Round timer
 - Hint system
-- Per-difficulty high score tracking (saved to `.highscores.json`)
+- Per-difficulty high score tracking
 
 ## Sample Output
 
@@ -91,21 +94,9 @@ Start the CLI game with:
 npx tsx src/cli.ts
 ```
 
-Or, if `tsx` is available globally:
+## Project Page
 
-```bash
-tsx src/cli.ts
-```
-
-### Building the Web Landing Page
-
-This project also includes a minimal web landing page. To build it:
-
-```bash
-npm run build
-```
-
-The production files will be generated in the `dist/` directory.
+**Project URL:** https://roadmap.sh/projects/number-guessing-game
 
 ## Project Structure
 
@@ -128,9 +119,9 @@ The production files will be generated in the `dist/` directory.
 - TypeScript
 - Node.js
 - tsx
-- Vite (for the landing page build)
+- Vite
 - Tailwind CSS
 
 ## License
 
-This project is open source and available under the [MIT License](LICENSE).
+This project is open source and available under the MIT License.
